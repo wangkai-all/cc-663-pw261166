@@ -1,0 +1,14 @@
+{
+  "name": "@otlp-viewer/demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/send.js",
+    "start:json": "node src/send.js --json",
+    "start:proto": "node src/send.js --proto"
+  },
+  "dependencies": {
+    "protobufjs": "^7.0.0"
+  }
+}

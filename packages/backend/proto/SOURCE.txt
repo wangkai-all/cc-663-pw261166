@@ -1,0 +1,3 @@
+Source: https://github.com/open-telemetry/opentelemetry-proto
+Revision: d31f7acf9d461fd0601077de516ac1eb7051422f
+Fetched: 2026-11-23

@@ -1,0 +1,22 @@
+{
+  "name": "otlp-trace-viewer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "OTLP trace receiver (JSON + Protobuf) with span tree, conflict detection and retention rules",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "concurrently -k -n server,web -c blue,green \"npm:dev -w packages/backend\" \"npm:dev -w packages/frontend\"",
+    "build": "npm run build -w packages/frontend",
+    "start": "npm run start -w packages/backend",
+    "demo": "npm run start -w packages/demo",
+    "demo:json": "npm run start:json -w packages/demo",
+    "demo:proto": "npm run start:proto -w packages/demo"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
